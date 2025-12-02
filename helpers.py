@@ -28,6 +28,9 @@ class Parse:
     def two_lines(string: str) -> List[str]:
         return string.split("\n\n")
 
+    def comma_sep(string: str) -> List[str]:
+        return string.split(",")
+
 
 def parse_input(path: str, parser: Callable[[str], T] = Parse.chars2d) -> T:
     with open(path) as f:
@@ -67,6 +70,6 @@ def omni_moves_indicies(w: int, h: int, x: int, y: int, include_all: bool = Fals
     for dx in range(-1, 2):
         for dy in range(-1, 2):
             if include_all or ((dy != 0 or dx != 0) and x + dx in range(w) and y + dy in range(h)):
-                final.append((x + dx, y+dy))
+                final.append((x + dx, y + dy))
 
     return final
