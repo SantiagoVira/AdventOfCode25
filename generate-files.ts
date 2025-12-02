@@ -16,6 +16,8 @@ ans1 = 0
 ans2 = 0
 
 
+print(ans1, ans2)
+
 `;
 
 for (let i = 1; i <= 12; i++) {

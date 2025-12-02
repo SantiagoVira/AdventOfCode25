@@ -6,3 +6,6 @@ from helpers import *  # noqa
 data = parse_input("./input.txt", Parse.lines)
 ans1 = 0
 ans2 = 0
+
+
+print(ans1, ans2)
