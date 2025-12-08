@@ -4,6 +4,7 @@ from typing import TypeVar, List, Tuple, Callable
 from copy import deepcopy
 import itertools
 from functools import cache, reduce
+import heapq
 
 
 T = TypeVar('T')
