@@ -5,7 +5,7 @@ from copy import deepcopy
 import itertools
 from functools import cache, reduce
 import heapq
-
+import numpy as np
 
 T = TypeVar('T')
 
